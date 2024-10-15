@@ -3,11 +3,11 @@ package api;
 import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
-public class UnSuccessReg {
+public class UnSuccessAuthBase {
     private final String error;
 
     @JsonCreator
-    public UnSuccessReg(
+    public UnSuccessAuthBase(
             @JsonProperty("error") String error) {
         this.error = error;
     }
